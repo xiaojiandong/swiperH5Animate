@@ -1,0 +1,136 @@
+
+
+
+.slide4{
+  position: relative;
+  .ichuanyi4-logo{
+    position: absolute;
+    z-index: 5;
+    top: 30px;
+    left: 30px;
+    width: 130px;
+    height: 53px;
+    background-image: url("image/ichuanyi-logo.png");
+    background-size: 100% 100%;
+  }
+
+}
+
+.word1{ // 从飞扬跋扈隐于
+  position: absolute;
+  display: none;
+  z-index: 6;
+  top: 160px;
+  right: 140px;
+  width: 26px;
+  height: 215px;
+  background-image: url("image/word1.png");
+}
+
+.move-word1{
+  -webkit-animation: moveWord1 0.4s 0.1s backwards;
+}
+@-webkit-keyframes  moveWord1 {
+   0%{
+     opacity: 0;
+     -webkit-transform: translateY(-100PX);
+   }
+  100%{
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+  }
+}
+
+.word2{ // 不动声色
+  position: absolute;
+  display: none;
+  z-index: 6;
+  top: 400px;
+  right: 140px;
+  width: 26px;
+  height: 116px;
+  background-image: url("image/word2.png");
+}
+
+.move-word2{
+  -webkit-animation: moveWord2 0.3s 0.4s backwards;
+}
+@-webkit-keyframes  moveWord2 {
+  0%{
+    opacity: 0;
+    -webkit-transform: scaleX(0);
+  }
+  80%{
+    -webkit-transform: scaleX(1.3);
+  }
+  100%{
+    opacity: 1;
+    -webkit-transform: scaleX(1);
+  }
+}
+
+.word3{ // 从繁华浮夸归于
+  position: absolute;
+  display: none;
+  z-index: 6;
+  top: 100px;
+  right: 80px;
+  width: 27px;
+  height: 215px;
+  background-image: url("image/word3.png");
+}
+
+.move-word3{
+  -webkit-animation: moveWord3 0.4s 0.1s backwards;
+}
+@-webkit-keyframes  moveWord3 {
+  0%{
+    opacity: 0;
+    -webkit-transform: translateY(100PX);
+  }
+  100%{
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+  }
+}
+
+
+.word4{ // 简约利落
+  position: absolute;
+  display: none;
+  z-index: 6;
+  top: 340px;
+  right: 80px;
+  width: 27px;
+  height: 119px;
+  background-image: url("image/word4.png");
+}
+
+.move-word4{
+  -webkit-animation: moveWord4 0.3s 0.4s backwards;
+}
+@-webkit-keyframes  moveWord4 {
+  0%{
+    opacity: 0;
+    -webkit-transform: scaleX(0);
+  }
+  80%{
+    -webkit-transform: scaleX(1.3);
+  }
+  100%{
+    opacity: 1;
+    -webkit-transform: scaleX(1);
+  }
+}
+
+
+
+//模特
+.model4{
+  position: absolute;
+  left: 50px;
+  bottom: 0;
+  width: 404px;
+  height: 830px;
+  background-image: url("image/model4.jpg");
+}

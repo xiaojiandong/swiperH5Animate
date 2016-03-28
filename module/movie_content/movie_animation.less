@@ -1,0 +1,94 @@
+
+
+// 第1个页面
+.tuibian{
+
+  width: 73px;
+  height: 282px;
+  margin: 0 auto;
+  margin-top: 70px;
+//  border: 1px solid #000;
+  background-image: url("image/tuibian.png");
+
+  -webkit-animation: moveTuiBian 2.5s 0.6s backwards;
+}
+@-webkit-keyframes moveTuiBian {
+   0%{
+     opacity: 0;
+     //-webkit-transform: translateY(-200px);
+   }
+  100%{
+    opacity: 1;
+    //-webkit-transform: translateY(0px);
+  }
+}
+
+.feather-wrap{
+  position: absolute;
+  bottom: 50px;
+  left: 160px;
+//  margin-left: -145px;
+  width: 320px;
+  height: 345px;
+//  border: 2px solid #000;
+  overflow: hidden;
+  background-image: url("image/other-feather1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-animation: moveFeatherWrap 1.2s 4.3s backwards;
+}
+.feather-wrap-move{
+  //-webkit-animation: moveFeatherWrap 1.6s 0.3s backwards;
+}
+@-webkit-keyframes moveFeatherWrap {
+  0%{
+    opacity: 0;
+    //-webkit-transform: translateY(-200px);
+  }
+  100%{
+    opacity: 1;
+    //-webkit-transform: translateY(0px);
+  }
+}
+
+
+.big-feather{
+  position: absolute;
+  z-index: 10;
+  bottom:75px;
+  left: 200px;
+  width: 251px;
+  height: 108px;
+  background-image: url("image/big-feather.png");
+  -webkit-animation: moveBigFeather 3.6s 1.0s backwards;
+}
+@-webkit-keyframes moveBigFeather {
+  0%{
+    opacity: 0;
+    -webkit-transform: translateY(-250px) translateX(-30px);
+  }
+  25%{
+
+    -webkit-transform: translateY(-160px) translateX(50px);
+  }
+  50%{
+    -webkit-transform: translateY(-100px) translateX(-30px);
+  }
+  75%{
+    -webkit-transform: translateY(-40px) translateX(50px);
+  }
+  100%{
+    opacity: 1;
+    -webkit-transform: translateY(0px) translateX(0px);
+    //-webkit-transform: translateY(0px);
+  }
+}
+
+
+
+
+
+// 第2个页面
+
+
+

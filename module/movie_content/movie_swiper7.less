@@ -1,0 +1,114 @@
+
+
+
+.slide7{
+  position: relative;
+//  background: #f7f7f9;
+
+
+}
+
+
+.slide7-bg{ // 中间的文字
+  position: absolute;
+  top: 100px;
+  left: 190px;
+  width: 252px;
+  height: 444px;
+  background-image: url("image/slide7-bg.png");
+}
+
+.fashion-way-btn{ // 探索时尚之旅 btn
+  position: absolute;
+  display: block;
+  z-index: 6;
+  top: 620px;
+  left: 205px;
+  width: 230px;
+  height: 65px;
+  background-image: url("image/fashion-way-btn.png");
+}
+
+.move-fashion-way-btn{
+  -webkit-animation: moveFashionWayBtn 0.8s 0.1s backwards;
+//  -webkit-animation-iteration-count: 2;
+}
+@-webkit-keyframes moveFashionWayBtn {
+  0%{
+    opacity: 0;
+    -webkit-transform: scale(0);
+  }
+  80%{
+    -webkit-transform: scale(1.3);
+  }
+  100%{
+    opacity: 1;
+    -webkit-transform: scale(1);
+  }
+}
+
+.feather-wrap1{
+  position: absolute;
+  display: block;
+  bottom: 50px;
+  left: 160px;
+  //  margin-left: -145px;
+  width: 320px;
+  height: 345px;
+  //  border: 2px solid #000;
+  overflow: hidden;
+  background-image: url("image/other-feather1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.feather-wrap-move1{
+  -webkit-animation: moveFeatherWrap1 1.2s 3.8s backwards;
+}
+@-webkit-keyframes moveFeatherWrap1 {
+  0%{
+    opacity: 0;
+    //-webkit-transform: translateY(-200px);
+  }
+  100%{
+    opacity: 1;
+    //-webkit-transform: translateY(0px);
+  }
+}
+
+
+.big-feather1{
+  position: absolute;
+  display: block;
+  z-index: 10;
+  bottom:75px;
+  left: 200px;
+  width: 251px;
+  height: 108px;
+  background-image: url("image/big-feather.png");
+
+}
+.big-feather1-move{
+  -webkit-animation: moveBigFeather1 3.6s 0.3s backwards;
+}
+@-webkit-keyframes moveBigFeather1 {
+  0%{
+    opacity: 0;
+    -webkit-transform: translateY(-250px) translateX(-30px);
+  }
+  25%{
+
+    -webkit-transform: translateY(-160px) translateX(50px);
+  }
+  50%{
+    -webkit-transform: translateY(-100px) translateX(-30px);
+  }
+  75%{
+    -webkit-transform: translateY(-40px) translateX(50px);
+  }
+  100%{
+    opacity: 1;
+    -webkit-transform: translateY(0px) translateX(0px);
+    //-webkit-transform: translateY(0px);
+  }
+}

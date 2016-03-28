@@ -1,0 +1,255 @@
+
+
+
+.slide3{
+  position: relative;
+  .ichuanyi3-logo{
+    position: absolute;
+    z-index: 5;
+    top: 30px;
+    left: 30px;
+    width: 130px;
+    height: 53px;
+    //  border: 1px solid #000;
+    background-image: url("image/ichuanyi-logo.png");
+    background-size: 100% 100%;
+  }
+
+}
+
+//上下两条线
+.line3{
+  display: block;
+  position: absolute;
+  top: 120px;
+  left: 250px;
+  width: 150px;
+  height: 1px;
+  background: #ccc;
+}
+.up-line{
+  .line3;
+  top: 110px;
+}
+.down-line{
+  .line3;
+  top: 260px;
+}
+
+.from3{ // 从
+  display: none;
+  position: absolute;
+  top: 140px;
+  left: 210px;
+}
+.from3-move{
+  -webkit-animation: moveFrom3 0.4s 0.2s backwards;
+}
+@-webkit-keyframes moveFrom3{
+  0%{
+    opacity: 0;
+   -webkit-transform: translateX(-50px);
+   }
+  100%{
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+  }
+}
+
+
+.dui-qi{ // 堆砌各种色彩
+  display: none;
+  position: absolute;
+  top: 137px;
+  left: 245px;
+  font-size: 33px;
+
+}
+.dui-qi-move{
+  -webkit-animation: moveDuiQi 0.5s 0.8s backwards;
+}
+@-webkit-keyframes moveDuiQi{
+  0%{
+    opacity: 0;
+    -webkit-transform: translateX(-50px);
+  }
+  100%{
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+  }
+}
+
+
+.through-line3{ //删除线
+  display: none;
+  position: absolute;
+  z-index: 4;
+  top: 156px;
+  left: 248px;
+  width: 195px;
+  height: 2px;
+  background: #000;
+}
+.through-line3-move{
+  -webkit-animation: moveThroughLine3 0.5s 1.4s backwards;
+}
+@-webkit-keyframes moveThroughLine3{
+  0%{
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+  }
+  100%{
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+  }
+}
+
+.to3{ //到
+  position: absolute;
+  display: none;
+  z-index: 10;
+  top: 195px;
+  left: 148px;
+}
+.to3-move{
+  -webkit-animation: moveTo3 0.5s 0.2s backwards;
+}
+@-webkit-keyframes moveTo3{
+  0%{
+    opacity: 0;
+    -webkit-transform: translateX(150px);
+  }
+  100%{
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+  }
+}
+
+.only-choose{ //只选择
+  position: absolute;
+  display: none;
+  z-index: 10;
+  top: 192px;
+  left: 185px;
+  font-size: 33px;
+  color: #850bb8;
+  //-webkit-transform: skew(35deg);
+}
+.only-choose-move{
+  -webkit-animation: moveOnlyChoose 0.6s 0.5s backwards;
+}
+@-webkit-keyframes moveOnlyChoose{
+  0%{
+    opacity: 0;
+    -webkit-transform: scale(1) skew(0deg) translateX(150px);
+  }
+  80%{
+//    opacity: 0;
+    -webkit-transform: scale(1.3) skew(50deg) translateX(0px);
+  }
+  100%{
+    opacity: 1;
+    -webkit-transform: scale(1) skew(0deg) translateX(0px);
+  }
+}
+
+.cheap-color{ //最便宜的搭配色
+  position: absolute;
+  z-index: 10;
+  display: none;
+  top: 195px;
+  left: 295px;
+}
+.cheap-color-move{
+  -webkit-animation: moveCheapColor 0.6s 0.8s backwards;
+}
+@-webkit-keyframes moveCheapColor{
+  0%{
+    opacity: 0;
+    -webkit-transform: translateX(150px);
+  }
+  100%{
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+  }
+}
+
+
+//九宫格1
+.slide3-img1{
+  position: absolute;
+  display: none;
+  z-index: 5;
+//  bottom: 450px;
+  top: 280px;
+  left: 52px;
+  width: 529px;
+  height: 175px;
+  background: url("image/slide3-img1.png");
+}
+
+.slide3-img1-move{
+  -webkit-animation: moveSlide3Img1 0.8s 0.3s backwards;
+}
+@-webkit-keyframes moveSlide3Img1 {
+  0%{
+    opacity: 0;
+    -webkit-transform: translateX(-250px);
+  }
+  100%{
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+  }
+}
+//九宫格2
+.slide3-img2{
+  position: absolute;
+  display: none;
+  z-index: 5;
+//  bottom: 270px;
+  top: 461px;
+  left: 52px;
+  width: 529px;
+  height: 175px;
+  background: url("image/slide3-img2.png");
+}
+
+.slide3-img2-move{
+  -webkit-animation: moveSlide3Img2 0.8s 0.3s backwards;
+}
+@-webkit-keyframes moveSlide3Img2 {
+  0%{
+    opacity: 0;
+    -webkit-transform: translateX(250px);
+  }
+  100%{
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+  }
+}
+//九宫格3
+.slide3-img3{
+  position: absolute;
+  display: none;
+  z-index: 5;
+//  bottom: 88px;
+  top: 641px;
+  left: 52px;
+  width: 529px;
+  height: 175px;
+  background: url("image/slide3-img3.png");
+}
+
+.slide3-img3-move{
+  -webkit-animation: moveSlide3Img3 0.8s 0.3s backwards;
+}
+@-webkit-keyframes moveSlide3Img3 {
+  0%{
+    opacity: 0;
+    -webkit-transform: translateX(-250px);
+  }
+  100%{
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+  }
+}

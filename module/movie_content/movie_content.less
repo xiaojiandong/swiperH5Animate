@@ -1,0 +1,343 @@
+
+
+@import "movie_animation";
+@import "movie_swiper3";
+@import "movie_swiper4";
+@import "movie_swiper5";
+@import "movie_swiper6";
+@import "movie_swiper7";
+
+html, body {
+  position: relative;
+  height: 100%;
+}
+body {
+  //background: #eee;
+  font-family: '微软雅黑';
+  color:#000;
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  background: transparent;
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+
+// 父容器
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+//父容器内的每个子div
+.swiper-slide {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  //font-size: 18px;
+  //background: #fff;
+
+  /* Center slide text vertically
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;*/
+}
+
+
+//ichuanyi的logo
+.ichuanyi-pos{
+  position: absolute;
+  z-index: 5;
+  top: 30px;
+  left: 30px;
+  width: 130px;
+  height: 53px;
+//  border: 1px solid #000;
+  background-image: url("image/ichuanyi-logo.png");
+  background-size: 100% 100%;
+}
+
+//第1个背景
+.slide1{
+  //width: 640px;
+  //background-image: url("image/slide-bg1.png");
+  //background-repeat: no-repeat;
+
+
+  //左上角logo
+  .ichuanyi1-logo{
+    .ichuanyi-pos;
+  }
+  //斜线
+  .lean-line{
+    position: absolute;
+    top: 125px;
+    width: 640px;
+    height: 440px;
+//    border: 2px solid #000;
+    background-image: url("image/lean-line.png");
+  }
+
+}
+
+//第2个背景
+.slide2{
+  position: relative;
+//  background: #f9fafe;
+  background: #fff;
+  text-align: center;
+//  background: #f00;
+  //background-image: url("image/slide-bg2.jpg");
+//  background-repeat: no-repeat;
+//  background-size: 100% 100%;
+  .ichuanyi2-logo{
+    .ichuanyi-pos;
+  }
+
+  .model-logo{
+    position: absolute;
+    bottom: 0;
+//    border: 2px solid #000;
+    left: 25px;
+    width: 495px;
+    height: 821px;
+    background-image: url("image/p2_man.jpg");
+  }
+
+  //从...到...
+  .from-motto{
+    position: absolute;
+    z-index: 4;
+    top: 200px;
+    right: 80px;
+    width: 30px;
+//    height: 300px;
+//    background: pink;
+  }
+
+  .to-motto{  // 到
+    display: none;
+    position: absolute;
+    z-index: 4;
+    top: 165px;
+    right: 175px;
+    width: 30px;
+    //    height: 300px;
+//    background: #ffff00;
+  }
+
+  .del-motto{ //盲目跟随爆款
+    position: absolute;
+    z-index: 5;
+    right: 80px;
+    top: 240px;
+    font-size: 33px;
+    width: 30px;
+//    background: #ccc;
+    -webkit-animation: moveDelMotto 0.4s 0.1s backwards;
+  }
+  @-webkit-keyframes moveDelMotto {
+    0%{
+      opacity: 0;
+      -webkit-transform: translateY(-200px);
+    }
+    100%{
+      opacity: 1;
+      -webkit-transform: translateY(0px);
+    }
+  }
+
+  .del-motto-through-line{ //盲目跟随爆款 竖线
+    position: absolute;
+    z-index: 6;
+    top: 240px;
+    right: 90px;
+    color: #ffff00;
+    width: 2px;
+    height: 235px;
+    background: #000;
+    -webkit-animation: moveDelLine 0.2s 0.7s backwards;
+  }
+  @-webkit-keyframes moveDelLine {
+    0%{
+      -webkit-transform: scaleY(0);
+    }
+    100%{
+      -webkit-transform: scaleY(1);
+    }
+  }
+
+}
+
+.up-frame{ // 向上的框
+  position: absolute;
+  z-index: 4;
+  top: 66px;
+  right: 141px;
+  width: 43px;
+  height: 9px;
+  background-image: url("image/up-frame.png");
+  -webkit-animation: moveUpFrame 1.3s 0.8s backwards;
+}
+@-webkit-keyframes moveUpFrame{
+  0%{
+    opacity: 0;
+    -webkit-transform: translateY(200px);
+  }
+  100%{
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+  }
+}
+.down-frame{ // 向下的框
+  position: absolute;
+  z-index: 4;
+  top: 525px;
+  right: 141px;
+  width: 43px;
+  height: 9px;
+  background-image: url("image/down-frame.png");
+  -webkit-animation: moveDownFrame 1.3s 0.8s backwards;
+}
+@-webkit-keyframes moveDownFrame{
+  0%{
+    opacity: 0;
+    -webkit-transform: translateY(-200px);
+  }
+  100%{
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+  }
+}
+
+.go-to{  // 到
+  position: absolute;
+  z-index: 4;
+  top: 105px;
+  right: 150px;
+  width: 30px;
+  //    height: 300px;
+//  background: #ffff00;
+  -webkit-animation: moveGoTo 0.8s 1.2s backwards;
+}
+@-webkit-keyframes moveGoTo{
+  0%{
+    opacity: 0;
+    -webkit-transform: translateY(0px);
+  }
+  70%{
+
+    -webkit-transform: translateY(40px);
+  }
+  100%{
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+  }
+}
+
+.fashion-suit{ //潮流的搭配直觉
+  position: absolute;
+  z-index: 4;
+  top: 235px;
+  right: 150px;
+  width: 30px;
+  //    height: 300px;
+//  background: #ffff00;
+  -webkit-animation: moveFashionSuit 0.8s 1.2s backwards;
+}
+@-webkit-keyframes moveFashionSuit{
+  0%{
+    opacity: 0;
+    -webkit-transform: translateY(0px);
+  }
+  70%{
+
+    -webkit-transform: translateY(-40px);
+  }
+  100%{
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+  }
+}
+.git-it{ // 掌握
+  position: absolute;
+  z-index: 5;
+  top: 145px;
+  right: 152px;
+  width: 30px;
+  font-size: 33px;
+  color: #850bb8;
+  -webkit-animation: moveGitIt 0.7s 1.9s backwards;
+}
+@-webkit-keyframes moveGitIt{
+  0%{
+    opacity: 0;
+    -webkit-transform: scale(0);
+  }
+  50%{
+    -webkit-transform: scale(1.3);
+  }
+  100%{
+    opacity: 1;
+    -webkit-transform: scale(1);
+  }
+}
+
+
+.swiper-container .touch{
+//  position:fixed;
+//  z-index:100;
+//  left:50%;
+//  width: 40px;
+//  height: 40px;
+//  font-size:30px;
+}
+.swiper-container .touch-swiper-up{
+  //top:20px;
+//  -webkit-animation: moveUp 2.0s 0.2s backwards;
+//  -webkit-animation-iteration-count: infinite;
+//  -webkit-animation-iteration-count: infinite;
+}
+
+
+// 向下引导的箭头
+.down-slide{
+  position: fixed;
+  z-index: 1000;
+  bottom: 40px;
+  left: 300px;
+  width: 50px;
+  height: 50px;
+//  color: #333;
+//  color: rgb(55,55,55);
+//  font-size: 80px;
+//  font-weight: bolder;
+//  -webkit-transform: rotate(-90deg) ;
+//  background: #000;
+  background-image: url("image/down-arrow.png");
+  background-size: 100% 100%;
+  -webkit-animation: moveDownSlide 2.2s 0.4s backwards;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes  moveDownSlide {
+  0%{
+    opacity: 0;
+    -webkit-transform: translateY(-150px);
+  }
+  100%{
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+  }
+}

@@ -1,0 +1,183 @@
+
+
+
+.slide6{
+  position: relative;
+//  background: #f7f7f9;
+  .ichuanyi6-logo{
+    position: absolute;
+    z-index: 5;
+    top: 30px;
+    left: 30px;
+    width: 130px;
+    height: 53px;
+    background-image: url("image/ichuanyi-logo.png");
+    background-size: 100% 100%;
+  }
+
+}
+
+
+
+.old-icon-big{ // 旧的logo
+  position: absolute;
+  z-index: 10;
+  display: block;
+  //  top: 160px;
+  top: 95px;
+  left: 240px;
+  width: 160px;
+  height: 160px;
+//  -webkit-transform: scale(0);
+  background-image: url("image/old-icon-big.png");
+}
+
+.move-old-icon{
+  -webkit-animation: moveOldIcon 0.5s 0.4s backwards;
+}
+@-webkit-keyframes  moveOldIcon {
+  0%{
+    //-webkit-transform: rotateY(0deg);
+    -webkit-transform: scale(1);
+    opacity: 1;
+    //background-image: url("image/old-icon-big.png");
+  }
+  100%{
+    -webkit-transform: scale(0);
+    opacity: 0;
+    //-webkit-transform: rotateY(360deg);
+    //background-image: url("image/new-icon-big.png");
+  }
+}
+
+
+.new-icon-big{ // 新的logo
+  position: absolute;
+  z-index: 20;
+  display: none;
+//  top: 160px;
+  top: 95px;
+  left: 240px;
+  width: 160px;
+  height: 160px;
+  background-image: url("image/new-icon-big.png");
+ // background-size: 100% 100%;
+}
+
+.move-new-icon{
+  -webkit-animation: moveNewIcon 0.4s 0.1s backwards;
+}
+@-webkit-keyframes  moveNewIcon {
+ 0%{
+   -webkit-transform: scale(0);
+   opacity: 0;
+//   background-image: url("image/old-icon-big.png");
+ }
+  90%{
+    -webkit-transform: scale(1.3);
+    opacity: 1;
+    //   -webkit-transform: rotateY(360deg);
+    //    background-image: url("image/new-icon-big.png");
+  }
+ 100%{
+   -webkit-transform: scale(1);
+   opacity: 1;
+//   -webkit-transform: rotateY(360deg);
+//    background-image: url("image/new-icon-big.png");
+  }
+}
+
+
+
+
+.lean-line6{ // 斜线
+  position: absolute;
+  z-index: 2;
+  top: 260px;
+  left: 0;
+  width: 640px;
+  height: 440px;
+
+  background-image: url("image/lean-line1.png");
+}
+
+.from-old-to-new{ // 从旧衣到新裳
+  position: absolute;
+  display: none;
+  z-index: 6;
+  top: 390px;
+  left: 210px;
+  letter-spacing: 6px;
+  span{
+    font-size: 33px;
+  }
+}
+.group-up{ // 成长一直都有
+  position: absolute;
+  display: none;
+  z-index: 6;
+  top: 440px;
+  left: 215px;
+  letter-spacing: 6px;
+}
+.but-change{ // 而蜕变
+  position: absolute;
+  display: none;
+  z-index: 6;
+  top: 485px;
+  left: 265px;
+  letter-spacing: 6px;
+  span{
+    font-size: 33px;
+    color: #850bb8;
+  }
+}
+.just-now{ // 只此一刻
+  position: absolute;
+  display: none;
+  z-index: 6;
+  top: 534px;
+  left: 248px;
+  letter-spacing: 6px;
+}
+
+.move-left-to-right{
+  -webkit-animation: moveLeftToRight 0.7s 0.2s backwards;
+}
+@-webkit-keyframes moveLeftToRight{
+  0%{
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+  }
+  100%{
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+  }
+}
+.move-right-to-left{
+  -webkit-animation: moveRightToLeft 0.7s 0.2s backwards;
+}
+@-webkit-keyframes moveRightToLeft{
+  0%{
+    opacity: 0;
+    -webkit-transform: translateX(100px);
+  }
+  100%{
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+  }
+}
+
+
+
+
+//模特
+.model6{
+  position: absolute;
+  z-index: 4;
+  right: 0;
+  bottom: 0;
+  width: 277px;
+  height: 544px;
+  background-image: url("image/model6.png");
+}

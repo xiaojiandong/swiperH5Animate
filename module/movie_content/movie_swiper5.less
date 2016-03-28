@@ -1,0 +1,83 @@
+
+
+
+.slide5{
+  position: relative;
+  background: #fff;
+  .ichuanyi5-logo{
+    position: absolute;
+    z-index: 5;
+    top: 30px;
+    left: 30px;
+    width: 130px;
+    height: 53px;
+    background-image: url("image/ichuanyi-logo.png");
+    background-size: 100% 100%;
+  }
+
+}
+
+.zi-tai{ // 姿态愈精致
+  position: absolute;
+  z-index: 5;
+  display: none;
+  top: 130px;
+  left: 110px;
+  letter-spacing: 3px;
+}
+.zi-tai-move{
+  -webkit-animation: moveZiTai 0.8s 0.2s backwards;
+}
+@-webkit-keyframes moveZiTai {
+  0%{
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+  }
+  100%{
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+  }
+}
+
+.throught-ling5{ //中间分割线
+  position: absolute;
+  z-index: 5;
+  display: block;
+  top: 180px;
+  left: 150px;
+  width: 80px;
+  height: 1px;
+  background: #000;
+}
+.life{ // 生活越多彩
+  position: absolute;
+  display: none;
+  z-index: 4;
+  top: 195px;
+  left: 110px;
+  letter-spacing: 3px;
+}
+.life-move{
+  -webkit-animation: moveLife 0.8s 0.2s backwards;
+}
+@-webkit-keyframes moveLife {
+  0%{
+    opacity: 0;
+    -webkit-transform: translateX(100px);
+  }
+  100%{
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+  }
+}
+
+
+//模特
+.model5{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 584px;
+  height: 774px;
+  background-image: url("image/p5_man.jpg");
+}

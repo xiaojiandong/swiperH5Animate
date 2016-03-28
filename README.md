@@ -3,7 +3,7 @@ swiper滑动，移动端H5动画宣传页，局部：
 ## [对应页面链接及效果图](http://apitest.yourdream.cc/m/activity/151028/index/)<br />
 ![image](https://github.com/xiaojiandong/blogAndResourceCollect/blob/master/img/tuibian-vi.png)
 
-## [对应脚本](https://github.com/xiaojiandong/viH5Animate/blob/master/module/movie_content/MovieContentView.js)
+## [对应脚本链接](https://github.com/xiaojiandong/viH5Animate/blob/master/module/movie_content/MovieContentView.js)
 ## 初始化swiper：
 ```js
 /**
